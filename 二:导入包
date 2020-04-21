@@ -1,0 +1,18 @@
+常规导入包方式
+import "fmt"
+import "os"
+import "time"
+import "strings"
+
+简洁导入包方式
+import(
+"fmt"
+"os"
+"time"
+"strings"
+)
+
+导入包之后，就可以使用格式<PackageName>.<FuncName> 来对包中的函数进行调用
+例如:fmt.Println("Hello human")
+如果导入包之后 未调用 其中的函数或者类型将会报出编译错误：
+
