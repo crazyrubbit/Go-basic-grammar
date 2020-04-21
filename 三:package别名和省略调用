@@ -1,0 +1,32 @@
+一:别名使用
+当使用第三方包时，包名可能会非常接近或者相同,此时就可以使用,别名来进行区别和调用
+eg:
+import std "ftm"
+或
+import(
+  std "ftm"
+)
+
+调用时候就需要使用别名替换
+func main(){
+  std.Println("Hello World!")
+}
+二:省略调用
+eg:
+import . "fmt"
+或
+import(
+  . "fmt"
+)
+
+
+调用时候省略包名
+func main() {
+	Println("Hello World!")
+}
+
+注意:
+(1):省略调用不建议使用,易混淆,时间久了就不知道函数属于哪个包了;
+(2):省略调用不可以和别名同时使用
+
+
