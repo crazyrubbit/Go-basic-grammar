@@ -1,0 +1,50 @@
+/**
+1:
+首先使用关键词package 来命名我们现在写的代码是属于哪个包的;
+package 必须放在非注释的第一行;
+紧跟在package 后面的是包的名称;
+我们现在是在编写一个可执行程序 我们的名称就是main;
+*/
+package main
+/**
+2:
+要想导入其它的包的话使用关键字:import;
+import后面跟上想要导入的包名,包名要用双引号括起来;
+*/
+import "fmt"
+/**
+3:
+常量的定义使用关键字const
+ */
+const PI=3.14
+/**
+4:
+全局变量的声明与赋值
+ */
+var name = "golang"
+/**
+5:
+一般类型的声明
+ */
+type newType int
+/**
+6:
+结构的声明
+ */
+type goLang struct {
+
+}
+/**
+7:
+接口的声明
+ */
+type golang interface {
+
+}
+/**
+8:
+由main 函数作为程序入口点启动
+ */
+func main() {
+	fmt.Println("Hello World!")
+}
